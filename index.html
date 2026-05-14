@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王欣慰的个人网站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <h2 class="logo">Wang Xinwei</h2>
+      <ul>
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#projects">项目经历</a></li>
+        <li><a href="#contact">联系方式</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hello">Communication Engineering Portfolio</p>
+        <h1>你好，我是王欣慰</h1>
+        <p class="hero-desc">
+          通信工程专业学生，关注射频电路、弱信号检测、低噪声放大器、
+          多模态识别与前端网页开发。
+        </p>
+        <a href="#projects" class="btn">查看项目经历</a>
+      </div>
+
+      <div class="carousel">
+        <div class="slide active">
+          <p class="slide-tag">National Award</p>
+          <h3>全国大学生电子设计竞赛</h3>
+          <p>简易自动接收机设计，实现 FM、AM、CW 信号自动识别与解调。</p>
+        </div>
+
+        <div class="slide">
+          <p class="slide-tag">Multimodal AI</p>
+          <h3>EEG-语音双模态识别</h3>
+          <p>融合脑电与语音特征，实现抑郁症严重程度辅助识别。</p>
+        </div>
+
+        <div class="slide">
+          <p class="slide-tag">RF Circuit</p>
+          <h3>射频带宽增益可调放大器</h3>
+          <p>面向多档增益和多档带宽需求的射频前端放大系统设计。</p>
+        </div>
+
+        <div class="carousel-buttons">
+          <button id="prevBtn">‹</button>
+          <button id="nextBtn">›</button>
+        </div>
+
+        <div class="dots">
+          <span class="dot active-dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about-section">
+    <h2>关于我</h2>
+    <p>
+      我是一名通信工程专业学生，具有电子系统设计、射频电路仿真、弱信号检测、
+      多模态识别和前端网页开发等方面的学习与实践经历。个人项目主要集中在
+      自动接收机、低噪声放大器、多模态智能识别系统以及网页交互设计等方向。
+    </p>
+
+    <div class="info-cards">
+      <div class="info-card">
+        <h3>专业方向</h3>
+        <p>通信工程 / 射频电路 / 弱信号检测</p>
+      </div>
+      <div class="info-card">
+        <h3>技术工具</h3>
+        <p>LTspice、OrCAD、Python、HTML、CSS、JavaScript</p>
+      </div>
+      <div class="info-card">
+        <h3>研究兴趣</h3>
+        <p>低噪声放大器、多模态识别、边缘部署</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>项目经历</h2>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="请输入关键词查询项目，例如：电赛、EEG、射频、噪声、前端">
+    </div>
+
+    <div class="filter-buttons">
+      <button onclick="filterProjects('全部')">全部</button>
+      <button onclick="filterProjects('竞赛')">竞赛</button>
+      <button onclick="filterProjects('科研')">科研</button>
+      <button onclick="filterProjects('射频')">射频</button>
+      <button onclick="filterProjects('前端')">前端</button>
+    </div>
+
+    <div id="projectList" class="project-list"></div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>联系方式</h2>
+    <p>姓名：王欣慰</p>
+    <p>专业：通信工程</p>
+    <p>邮箱：example@email.com</p>
+    <p>方向：射频电路、弱信号检测、多模态识别、前端开发</p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 王欣慰的个人网站 | Personal Portfolio Website</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
